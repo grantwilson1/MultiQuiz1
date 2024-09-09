@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
         Answer(R.string.option3, false),
         Answer(R.string.option4, false),)
 
-    private val buttons = listOf(option1, option2, option3, option4)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,27 +40,27 @@ class MainActivity : AppCompatActivity() {
         help_button = findViewById(R.id.help_button)
 
         binding.option1.setOnClickListener {
+            option1.isSelected = !option1.isSelected
             option1.updateColor()
         }
 
         binding.option2.setOnClickListener {
+            option2.isSelected = !option2.isSelected
             option2.updateColor()
         }
 
         binding.option3.setOnClickListener {
+            option3.isSelected = !option3.isSelected
             option3.updateColor()
         }
 
         binding.option4.setOnClickListener {
+            option4.isSelected = !option4.isSelected
             option4.updateColor()
         }
 
         reset_button.setOnClickListener {
-            for (button in buttons){
-                button.isSelected = false
-                button.isEnabled = true
-                button.updateColor()
-            }
+
 
         }
 
@@ -73,9 +72,7 @@ class MainActivity : AppCompatActivity() {
                     counter++
                 }
             }
-            for(button in buttons){
-                button.updateColor()
-            }
+
         }
 
 
