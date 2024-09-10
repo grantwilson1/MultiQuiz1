@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -29,7 +30,7 @@
             android:id="@+id/option1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#CC3377"
+            app:backgroundTint="#00AAFF"
             android:text="@string/option1" />
 
 
@@ -38,6 +39,7 @@
             android:id="@+id/option2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:backgroundTint="#00AAFF"
             android:text="@string/option2" />
 
         <Button
@@ -45,6 +47,7 @@
             android:id="@+id/option3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:backgroundTint="#00AAFF"
             android:text="@string/option3" />
 
         <Button
@@ -52,6 +55,7 @@
             android:id="@+id/option4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:backgroundTint="#00AAFF"
             android:text="@string/option4" />
 
 
@@ -72,6 +76,7 @@
             android:id="@+id/help_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
             android:text="@string/help_button" />
 
         <Space
@@ -82,6 +87,7 @@
             android:id="@+id/reset_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
             android:text="@string/reset_button" />
 
     </LinearLayout>
